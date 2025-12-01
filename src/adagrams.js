@@ -12,13 +12,18 @@ const DRAW_TIMES = 10;
 const BONUS_POINT_FOR_LENGTH = 8;
 
 // wave 1
-export const drawLetters = () => {
-  const hand = [];
+const geFlatLetterPool = () => {
   const letters = [];
-
   for (const [letter, qty] of Object.entries(LETTER_POOL)){
     letters.push(...Array(qty).fill(letter));
   };
+  return letters;
+};
+
+export const drawLetters = () => {
+  const hand = [];
+  const letters = geFlatLetterPool();
+
 
   for (let i = 0; i < DRAW_TIMES; i++){
     const randomIndex = Math.floor(Math.random() * letters.length);
