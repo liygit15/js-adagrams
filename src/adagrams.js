@@ -11,6 +11,7 @@ const LETTER_SCORES = {
 const DRAW_TIMES = 10;
 const BONUS_POINT_FOR_LENGTH = 8;
 
+
 // wave 1
 const geFlatLetterPool = () => {
   const letters = [];
