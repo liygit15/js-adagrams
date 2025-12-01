@@ -70,6 +70,10 @@ describe('Adagrams', () => {
     });
   });
 
+  it('test entry point', () => {
+    // console.log('not a test')
+    // const result = drawLetters().length;
+  });
   describe('usesAvailableLetters', () => {
     it('returns true if the submitted letters are valid against the drawn letters', () => {
       const drawn = ['D', 'O', 'G', 'X', 'X', 'X', 'X', 'X', 'X', 'X'];
@@ -147,7 +151,7 @@ describe('Adagrams', () => {
       const words = ['XXX', 'XXXX', 'X', 'XX'];
       const correct = { word: 'XXXX', score: scoreWord('XXXX') };
 
-      expect(highestScoreFrom(words)).toEqual(correct)
+      expect(highestScoreFrom(words)).toEqual(correct);
     });
 
     describe('in case of tied score', () => {

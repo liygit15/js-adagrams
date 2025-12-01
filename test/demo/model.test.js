@@ -1,7 +1,7 @@
 import Model from '../../src/demo/model.js';
 import Adagrams from '../../src/demo/adagrams.js';
 
-describe.skip('Game Model', () => {
+describe('Game Model', () => {
   const config = {
     players: [
       'Player A',
